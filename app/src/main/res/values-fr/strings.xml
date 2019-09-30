@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="email">Entrez votre adresse email: </string>
+    <string name="editEmail">Tapez email ici</string>
+    <string name="password">Tapez votre mot de passe: </string>
+    <string name="editPassword"> </string>
+    <string name="button">S\'IDENTIFIER</string>
+
+    <string name="profile">Votre profil</string>
+    <string name="name">Votre nom:</string>
+    <string name="editName">Entrez votre nom</string>
+    <string name="editEmails">Votre email:</string>
+    <string name="editEmailLine">Entrer votre Email: </string>
+    <string name="picture">Ta photo:</string>
+    <string name="picture2">Cliquez sur le bouton ci-dessus pour prendre une photo </string>
+</resources>

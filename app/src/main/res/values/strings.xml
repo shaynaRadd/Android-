@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="email">Enter your email address: </string>
+    <string name="editEmail">Type email here</string>
+    <string name="password">Type your password: </string>
+    <string name="editPassword"> </string>
+    <string name="button">LOGIN </string>
+
+    <string name="profile">Your profile</string>
+    <string name="name">Your name:</string>
+    <string name="editName">Enter your name</string>
+    <string name="editEmails">Your email:</string>
+    <string name="editEmailLine">Enter your email: </string>
+    <string name="picture">Your picture: </string>
+    <string name="picture2">Click the button above to take a picture </string>
+</resources>
