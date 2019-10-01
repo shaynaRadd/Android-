@@ -13,4 +13,9 @@
     <string name="editEmailLine">Enter your email: </string>
     <string name="picture">Your picture: </string>
     <string name="picture2">Click the button above to take a picture </string>
+
+    <string name="goToChat">Go to chat </string>
+    <string name="sendButton">Send </string>
+    <string name="receiveButton">Receive </string>
+    <string name="messageBox">Type here </string>
 </resources>

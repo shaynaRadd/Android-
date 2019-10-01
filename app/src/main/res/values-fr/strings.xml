@@ -14,4 +14,6 @@
     <string name="editEmailLine">Entrer votre Email: </string>
     <string name="picture">Ta photo:</string>
     <string name="picture2">Cliquez sur le bouton ci-dessus pour prendre une photo </string>
+
+    <string name="goToChat">Aller au parler </string>
 </resources>

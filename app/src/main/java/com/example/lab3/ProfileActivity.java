@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -16,6 +17,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     ImageButton mImageButton;
     EditText editText;
+    Button chatButton;
 
     public static final String ACTIVITY_NAME = "PROFILE_ACTIVITY";
     static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -27,11 +29,20 @@ public class ProfileActivity extends AppCompatActivity {
 
         editText = findViewById(R.id.emailProfile);
         mImageButton = (ImageButton) findViewById(R.id.imageButton);
+        chatButton = findViewById(R.id.chatButton);
         mImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent pictureIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(pictureIntent, REQUEST_IMAGE_CAPTURE);
+            }
+        });
+
+        chatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+                startActivity(intent);
             }
         });
         Bundle bundle = getIntent().getExtras();
