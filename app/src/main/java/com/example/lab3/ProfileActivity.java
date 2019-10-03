@@ -37,7 +37,7 @@ public class ProfileActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         String email = bundle.getString("Email");
         editText.setText(email);
-        Log.i(ACTIVITY_NAME, "In function: onCreate");
+        Log.e(ACTIVITY_NAME, "In function: onCreate");
 
 
     }
@@ -45,44 +45,44 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        Log.i(ACTIVITY_NAME, "In function: onPause");
+        Log.e(ACTIVITY_NAME, "In function: onPause");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i(ACTIVITY_NAME, "In function: onResume");
+        Log.e(ACTIVITY_NAME, "In function: onResume");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i(ACTIVITY_NAME, "In function: onDestroy");
+        Log.e(ACTIVITY_NAME, "In function: onDestroy");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.i(ACTIVITY_NAME, "In function: onStart");
+        Log.e(ACTIVITY_NAME, "In function: onStart");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i(ACTIVITY_NAME, "In function: onStop");
+        Log.e(ACTIVITY_NAME, "In function: onStop");
     }
 
 
 
     private void dispatchTakePictureIntent() {
-        mImageButton.setOnClickListener(clk -> {
+        //  mImageButton.setOnClickListener(clk -> {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
 
-            }
-            });
+        }
     }
+
 
     @Override
     protected void onActivityResult ( int requestCode, int resultCode, Intent data){
@@ -91,7 +91,7 @@ public class ProfileActivity extends AppCompatActivity {
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             mImageButton.setImageBitmap(imageBitmap);
 
-            Log.i(ACTIVITY_NAME, "In function: onActivityResult");
+            Log.e(ACTIVITY_NAME, "In function: onActivityResult");
         }
     }
 }

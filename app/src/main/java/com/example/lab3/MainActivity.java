@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
 
-        Log.i(ACTIVITY_NAME, "IN ONPAUSE");
+        Log.e(ACTIVITY_NAME, "IN ONPAUSE");
         SharedPreferences prefs = getSharedPreferences("profile_activity", Context.MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
         edit.putString("Email", editText.getText().toString());
